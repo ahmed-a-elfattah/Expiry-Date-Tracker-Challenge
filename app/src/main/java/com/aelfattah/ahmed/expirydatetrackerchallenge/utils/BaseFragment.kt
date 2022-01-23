@@ -1,4 +1,4 @@
-package com.aelfattah.ahmed.expirydatetrackerchallenge.ui
+package com.aelfattah.ahmed.expirydatetrackerchallenge.utils
 
 import android.os.Bundle
 import android.view.LayoutInflater
