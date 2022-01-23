@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Expiry Date Tracker Challenge</string>
+    <string name="expired">Expired</string>
+    <string name="goods">Goods</string>
+    <string name="add_item">Add Item</string>
 </resources>

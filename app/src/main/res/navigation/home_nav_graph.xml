@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aelfattah.ahmed.expirydatetrackerchallenge.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_barcodeScannerFragment"
+            app:destination="@id/barcodeScannerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_expiredGoodsFragment"
+            app:destination="@id/expiredGoodsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/expiredGoodsFragment"
+        android:name="com.aelfattah.ahmed.expirydatetrackerchallenge.ui.expiredGoods.ExpiredGoodsFragment"
+        android:label="fragment_expired_goods"
+        tools:layout="@layout/fragment_expired_goods" />
+    <fragment
+        android:id="@+id/barcodeScannerFragment"
+        android:name="com.aelfattah.ahmed.expirydatetrackerchallenge.ui.barcodeScanner.BarcodeScannerFragment"
+        android:label="fragment_barcode_scanner"
+        tools:layout="@layout/fragment_barcode_scanner" />
+</navigation>
