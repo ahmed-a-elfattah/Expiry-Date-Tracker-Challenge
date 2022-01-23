@@ -3,4 +3,8 @@
     <string name="expired">Expired</string>
     <string name="goods">Goods</string>
     <string name="add_item">Add Item</string>
+    <string name="name">Name</string>
+    <string name="category">Category</string>
+    <string name="expirydate">Expiry Date</string>
+    <string name="save">Save</string>
 </resources>

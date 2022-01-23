@@ -45,6 +45,7 @@ dependencies {
     //Room
     implementation "androidx.room:room-runtime:$rootProject.room_version"
     implementation("androidx.room:room-ktx:$rootProject.room_version")
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt "androidx.room:room-compiler:$rootProject.room_version"
     testImplementation "androidx.room:room-testing:$rootProject.room_version"
 
@@ -67,6 +68,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycle_version")
 
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+    implementation 'com.karumi:dexter:6.2.3'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

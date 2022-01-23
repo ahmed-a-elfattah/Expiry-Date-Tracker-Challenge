@@ -33,12 +33,12 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
             launch {
                 for (i in 1..4) {
                     var item: Item
-                    if (i >2) {
+                    if (i > 2) {
                         item = Item(
                             barcode = "barcode$i",
                             name = "name$i",
                             category = "category$i",
-                            expiryDate = System.currentTimeMillis(),
+                            expiryDate = System.currentTimeMillis() + (10000 * i),
                             expired = true
                         )
                     } else {
@@ -46,7 +46,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
                             barcode = "barcode$i",
                             name = "name$i",
                             category = "category$i",
-                            expiryDate = System.currentTimeMillis()
+                            expiryDate = System.currentTimeMillis() + (10000 * i)
                         )
                     }
 

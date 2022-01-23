@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpiryDateTrackerChallenge">
         <activity
+            android:name=".ScannerActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
